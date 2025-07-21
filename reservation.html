@@ -29,11 +29,44 @@
         <ul>
             <li><a href="#">Reservation</a></li>
             </ul>
-            <!-- notice -->
+            <!-- 메인컨텐츠 -->
+             <div class="contents">
+                <!-- notice -->
             <div class="notice">
                 <img src="images/notice.png" alt="notice">
-                <h1>NOTICE</h1>
+                <h3>NOTICE</h3>
+                <div class="notice-hover">
+                    <p>※ 당일 예약 취소는 불가능 합니다. <br>
+                    ※ No Show 발생 시 예약권한이 박탈됩니다. <br>
+                    ※ 어린아이는 동반 하실 수 없습니다.
+                </p>
             </div>
+            </div>
+            <!-- 예약박스 -->
+            <div class="reservation">
+                <div class="resrvation-box">
+                    <div class="name">
+                        <label for="name">성함</label>
+                        <input type="text">
+                    </div>
+                    <div class="phone">
+                        <label for="phone">연락처</label>
+                        <input type="tel">
+                    </div>
+                    <div class="date">
+                        <label for="date">예약날짜</label>
+                        <input type="datetime-local" name="date" id="">
+                    </div>
+                    <div class="txt">
+                        <label for="txt">요청사항</label>
+                        <textarea name="txt" id="txt"></textarea>
+                    </div>
+                    <input class="submit" type="submit" value=" 예약하기 ">
+
+                </div>
+            </div>
+        </div>
+            
             
        </div>
     </div>
