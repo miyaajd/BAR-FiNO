@@ -76,6 +76,56 @@ li {
 .main{
     width: 100%;
     height: 650px;
+    display: flex;
+}
+/* 사이드메뉴 */
+
+.main a {
+  text-decoration: none;
+  color: #555;
+}
+.main ul {
+  width: 280px;
+  height: 650px;
+  padding: 50px 30px;
+}
+.main li {
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: rgba(245, 223, 79, 0.3);
+  padding: 20px;
+}
+.main li:hover {
+  background-color: #fff;
+}
+/* notice */
+
+.notice{
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+
+.notice img
+{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.notice h1{
+    width: 100%;
+    height: 180px;
+    background-color: rgba(0, 0, 0 ,0.5);
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 180px;
+    font-size: 45px;
+    letter-spacing: 1.5px; 
 }
 
 
