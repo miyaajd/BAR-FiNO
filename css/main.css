@@ -203,11 +203,23 @@ h2 {
 }
 .wineglass-in {
   border: 60px solid transparent;
-  border-top-color: rgb(245, 223, 79);
+  /* border-top-color: rgb(245, 223, 79); */
+  
   position: absolute;
   bottom: 21%;
   right: 4%;
   border-radius: 5px;
+  /* 애니메이션 추가 */
+  animation: wineColorChange 3s forwards infinite ease-in-out;
+}
+/* 와인잔 내부 색 변화 애니메이션 */
+@keyframes wineColorChange {
+  0% {
+    border-top-color: linear-gradient(to top, rgb(245, 223, 79), rgb(245, 223, 79)); /* 노란색 */
+  }
+  100% {
+    border-top-color: rgb(245, 223, 79); /* 빨간색 */
+  }
 }
 /* 이미지링크 */
 
